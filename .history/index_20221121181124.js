@@ -15,3 +15,6 @@ function wrapAdjective(flair = "*") {
         return `You are ${flair}${adjective}${flair}!`;
     };
 }
+  
+
+wrapAdjective("%")("a dedicated programmer"); //=> "You are %a dedicated programmer%!"

@@ -9,9 +9,12 @@ const mondayWork = function (activity = "go to the office") {
     return `This Monday, I will ${activity}.`;
 }
 
-
-function wrapAdjective(flair = "*") {
-    return function (adjective = "special") {
-        return `You are ${flair}${adjective}${flair}!`;
+function wrapAdjective(adjective = "special") {
+    const part1 = "hi";
+    return function () {
+      const part2 = "there";
+      return function () {
+        console.log(`${part1.toUpperCase()} ${part2} ${name}`);
+      };
     };
-}
+  }

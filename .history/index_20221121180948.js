@@ -10,8 +10,11 @@ const mondayWork = function (activity = "go to the office") {
 }
 
 
-function wrapAdjective(flair = "*") {
+function wrapAdjective(flair) {
     return function (adjective = "special") {
         return `You are ${flair}${adjective}${flair}!`;
     };
 }
+  
+
+wrapAdjective("%")("a dedicated programmer"); //=> "You are %a dedicated programmer%!"

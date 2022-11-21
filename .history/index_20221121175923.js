@@ -9,9 +9,12 @@ const mondayWork = function (activity = "go to the office") {
     return `This Monday, I will ${activity}.`;
 }
 
-
-function wrapAdjective(flair = "*") {
-    return function (adjective = "special") {
-        return `You are ${flair}${adjective}${flair}!`;
+function wrapAdjective(adjective = "special") {
+    const flair = "hi";
+    return function () {
+      const part2 = "there";
+      
     };
 }
+
+wrapAdjective("%")("a dedicated programmer"); //=> "You are %a dedicated programmer%!"
